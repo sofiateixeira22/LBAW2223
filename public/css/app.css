@@ -1,0 +1,301 @@
+/* Menu */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+.menu {
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  padding-top: 20px;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+
+/* User Role */
+.role {
+  font-size: 0.875rem;
+  color: grey;
+}
+
+/* Character Counters */
+#count-postTitle, #count-postText, #count-commentText, #count-message {
+  float: right;
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
+  color: grey;
+}
+
+/* Header and Button alignment */
+.flex-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+/* Password Info */
+.info {
+  padding: 0.1rem 0 0 0;
+  font-size: 0.775rem;
+  color: grey;
+}
+
+/* Error Messages */
+.error {
+  padding: 0.1rem 0 0 0;
+  font-size: 0.775rem;
+  color: red;
+}
+
+/* Search */
+.searchbar {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+input[type="search"] {
+  height: 35px;
+  border-width: thin;
+  outline: 0;
+  color: #333;
+  font-size: 1rem;
+  width: 100%;
+  background: white;
+  padding: 0 1.6rem;
+  border-radius: 0.7rem;
+  appearance: none;
+  transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+#accordionTags > div > h2 > button {
+  padding: 5px;
+  background-color: white;
+  border-radius: 0.7rem;
+  box-shadow: none;
+  font-size: 0.9rem;
+  color: #333;
+}
+#accordionTags > div {
+  border-color: darkgrey;
+}
+.orderby {
+  padding: 5px;
+  border-color: darkgray;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Accordions */
+.accordion-collapse {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 0.9rem;
+  transition: 0.42s;
+  
+  padding: 5px;
+  border-radius: 0.7rem;
+  box-shadow: none;
+}
+.active, .accordion:hover {
+  background-color: #eee; 
+}
+.accordionFaqs {
+  border-radius: 0.7rem;
+}
+
+/* Question Tags */
+#accordionQTags > div > h2 > button {
+  padding: 7px;
+}
+
+/* Avatar */
+#avatar {
+  display: none;
+}
+#avatarLabel {
+  cursor: pointer;
+  border-radius: 0.7rem;
+  text-align: center;
+}
+#avatarName {
+  color: #333;
+}
+#avatarDiv {
+  align-items: center;
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.outlined {
+  border: 1px;
+  border-style: solid;
+  border-color: #333;
+}
+.cardBtn{
+  color: darkgray;
+  padding: 0;
+  padding-right: 5px;
+  font-size: 0.9rem;
+}
+.delete {
+  color: darkgray;
+  padding: 0;
+  padding-right: 5px;
+  font-size: 0.9rem;
+}
+.addCommentBtn {
+  padding: 0;
+  padding-left: 10px;
+}
+.addAnswerBtn {
+  padding: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.report {
+  color: red;
+}
+.follow {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.followBtn {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+}
+.followBtn:hover {
+  background-color: green;
+  color: white;
+}
+.userBtn, .userBtn:hover {
+  color: white;
+}
+
+/* Labels */
+.editedLabel {
+  color: grey;
+  font-size: small;
+}
+.starLabel {
+  color: #333;
+  font-size: small;
+}
+.badgeLabel {
+  cursor: alias;
+  margin-bottom: 10px;
+  background-color: green;
+  border-color: green;
+}
+.badgeLabel:hover {
+  cursor: alias;
+  background-color: white;
+  border-color: green;
+  color: black;
+}
+
+/* Center */
+.centering {
+  text-align: center;
+}
+.align {
+  align-items: center;
+}
+.pageHeader {
+  margin: 0;
+}
+.about {
+  list-style: none;
+}
+
+/* Shrink Text Shown */
+.shrinkTitle, .shrinkText {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.shrinkText {
+  -webkit-line-clamp: 3;
+}
+
+/* Back to Top Button */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  outline: none;
+  background-color: lightgreen;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+}
+#topBtn:hover {
+  background-color: #555;
+}
+
+/* Accordion Colors */
+.accordion-button {
+  color: #333;
+}
+.accordion-button:not(.collapsed){
+  background-color: lightgreen;
+  color: #333;
+}
+
+.pushright {
+  float: inline-end;
+}
+
+/* Footer */
+.footer {
+  background-color: #6FD25A;
+}
+
+/* Notifications Header */
+.offcanvas-header {
+  background-color: #6FD25A;
+  color: white;
+}
+
+.card {
+  margin-bottom: 15px;
+}
